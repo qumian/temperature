@@ -25,7 +25,7 @@ jobs:
           python-version: 3.7
       - name: '测试'
         env:
-          SCKEY: ${{ secrets.NAME }}
+          NAME: ${{ secrets.NAME }}
         run: python ./test.py
 
       # Runs a set of commands using the runners shell
