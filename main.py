@@ -7,6 +7,12 @@ import time
 import io
 import random
 
+
+name = os.environ["NAME"]
+account = os.environ["ACCOUNT"]
+password = os.environ["PASSWORD"]
+qq = os.environ["QQ"]
+
 # 有饭邮件通知提醒程序
 def send_email(msg_to, text_content):
     url = "http://113.31.114.67/qq/index.php?"
@@ -76,4 +82,4 @@ def geturl(name, account, password, qq):
         text_content = "学院："+respa['data']['org']+"\n班级："+respa['data']['bj']+"\n姓名："+name +"\n学号："+respa['data']['xh']+"\n有饭提醒你："+ resp['data'] +"\n有饭微信公众号：有饭工作室 \n有饭微信小程序：有饭工具箱\n \n有钱终成眷属，没钱亲眼目睹"
         send_email(qq,text_content)
 
-geturl("宋军歌", "201910070311", "026839", "2733411327")
+geturl(name, account, password, qq)
