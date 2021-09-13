@@ -23,6 +23,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: '测试'
+        env:
+          SCKEY: ${{ secrets.NAME }}
         run: python ./test.py
 
       # Runs a set of commands using the runners shell
