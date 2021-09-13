@@ -1,6 +1,6 @@
 import os
 
-USERNAME = os.environ["name"]
+USERNAME = os.environ["NAME"]
 PASSWORD = os.environ["PASSWORD"]
 print("测试的项目")
 print(USERNAME )
