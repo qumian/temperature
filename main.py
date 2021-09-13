@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import lxml.etree as etree
+import os
 import requests
 import sys
 import time
