@@ -25,6 +25,8 @@ jobs:
           python-version: 3.7
       - name: 'Install lxml'
         run: pip install lxml
+      - name: 'Install request'
+        run: pip install requests
       - name: '体温上传'
         env:
           NAME: ${{ secrets.NAME }}
